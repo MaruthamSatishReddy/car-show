@@ -2,7 +2,7 @@
 import { CustomFilter, Hero, SearchBar } from '@/components';
 import { fetchCars } from '../utils';
 import CarCard from '@/components/CarCard';
-import { fuels, yearsOfProduction } from '@/constants';
+import { fuels, yearsOfProduction, staticCarsData } from '@/constants';
 export default async function Home() {
   const allCars = await fetchCars();
   console.log(allCars);
@@ -31,10 +31,13 @@ export default async function Home() {
             </div>
           </section>
         ) : (
-          <div className="home__error-container">
-            <h2 className="text-black text-xl font-bold">Oops, no results</h2>
-            <p>{allCars?.message}</p>
-          </div>
+          <section>
+            <div className="home__cars-wrapper">
+              {staticCarsData?.map((car) => (
+                <CarCard car={car} />
+              ))}
+            </div>
+          </section>
         )}
       </div>
     </main>
