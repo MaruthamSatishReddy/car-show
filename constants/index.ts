@@ -127,7 +127,7 @@ export const staticCarsData = [
     make: 'toyota',
     model: 'camry',
     transmission: 'm',
-    year: 1993,
+    year: 2015,
   },
   {
     city_mpg: 19,
@@ -141,7 +141,7 @@ export const staticCarsData = [
     make: 'toyota',
     model: 'camry',
     transmission: 'm',
-    year: 1993,
+    year: 2016,
   },
   {
     city_mpg: 19,
@@ -155,7 +155,7 @@ export const staticCarsData = [
     make: 'toyota',
     model: 'camry',
     transmission: 'm',
-    year: 1993,
+    year: 2019,
   },
   {
     city_mpg: 19,
